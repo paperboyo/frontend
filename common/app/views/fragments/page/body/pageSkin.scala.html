@@ -1,0 +1,7 @@
+@()(implicit page: model.Page, request: RequestHeader)
+
+@import common.Edition
+
+@if(page.metadata.hasPageSkinOrAdTestPageSkin(Edition(request))) {
+    @fragments.commercial.pageSkin()
+}

@@ -1,7 +1,8 @@
 @(page: model.PressedPage)(implicit request: RequestHeader, context: model.ApplicationContext)
 
-@main(page, projectName = Option("facia")){
-    @fragments.frontHead(page)
+@mainLegacy(page, projectName = Option("facia")){
+    @* Front specific head stuff *@
 }{
-    @views.FrontsCleaner(page, fragments.frontBody(page).toString)
+    @views.FrontsCleaner(page, fragments.frontBody(page))
 }
+

@@ -1,0 +1,5 @@
+@()(implicit page: model.Page, request: RequestHeader)
+
+@if(!page.metadata.isFront && conf.switches.Switches.SurveySwitch.isSwitchedOn) {
+    @fragments.commercial.survey()
+}
