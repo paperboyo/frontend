@@ -1,11 +1,11 @@
 body:before {
-    content: '';
     background: #005689;
-    position: absolute;
-    top: 0;
-    right: 0;
     bottom: 0;
+    content: '';
     left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: -1;
 }
 
@@ -17,9 +17,9 @@ wrapper {
         width: 940px;
     }
 
-     @include mq(wide) {
-         width: 1200px;
-     }
+    @include mq(wide) {
+        width: 1200px;
+    }
 }
 
 logo {
@@ -60,19 +60,19 @@ contentBlock {
 }
 
 heading {
-    color: #FFFFFF;
+    color: #fff;
     font-size: 36px;
 }
 
 bodyCopy {
-    color: #AAD8F1;
+    color: #aad8f1;
     font-size: 15px;
     margin-bottom: 12px;
     padding-right: 140px;
 }
 
 link {
-    color: #FFFFFF;
+    color: #fff;
 }
 
 logo {
