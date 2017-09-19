@@ -32,7 +32,7 @@ import { Clickstream } from 'common/modules/ui/clickstream';
 import { init as initDropdowns } from 'common/modules/ui/dropdowns';
 import { fauxBlockLink } from 'common/modules/ui/faux-block-link';
 import cookiesBanner from 'common/modules/ui/cookiesBanner';
-import RelativeDates from 'common/modules/ui/relativedates';
+import { initRelativeDates } from 'common/modules/ui/relativedates';
 import { init as initCustomSmartAppBanner } from 'common/modules/ui/smartAppBanner';
 import { init as initTabs } from 'common/modules/ui/tabs';
 import { Toggles } from 'common/modules/ui/toggles';
@@ -82,7 +82,7 @@ const showToggles = (): void => {
 };
 
 const showRelativeDates = (): void => {
-    RelativeDates.init();
+    initRelativeDates();
 };
 
 const initClickstream = (): void => {
